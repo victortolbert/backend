@@ -48,6 +48,7 @@ yarn
 @task('generate_assets', ['on' => 'remote'])
 {{ logMessage("[4/6] 🌅  Generating assets…") }}
 cd {{ $release_dir }}/{{ $release }}
+yarn build
 @endtask
 
 @task('update_permissions')
@@ -75,7 +76,7 @@ sudo -S service php7.4-fpm reload;
 
 cd {{ $release_dir }}/{{ $release }}
 
-php artisan config:cache
+{{-- php artisan config:cache --}}
 {{-- php artisan route:cache --}}
 {{-- php artisan horizon:purge --}}
 {{-- php artisan horizon:terminate --}}
