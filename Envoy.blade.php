@@ -67,7 +67,7 @@ cd {{ $release_dir }}/{{ $release }}/storage;
 ln -nfs ../../logs logs;
 chgrp -h www-data logs;
 
-sudo -S service php7.4-fpm reload;
+sudo -S service php8.0-fpm reload;
 
 cd {{ $release_dir }}/{{ $release }}
 
