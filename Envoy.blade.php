@@ -41,8 +41,9 @@ php artisan clear-compiled --env=production;
 @task('run_yarn', ['on' => 'remote'])
 {{ logMessage("[3/6] 📦  Running Yarn…") }}
 cd {{ $release_dir }}/{{ $release }}
-yarn config set ignore-engines true
-yarn
+{{-- yarn config set ignore-engines true --}}
+{{-- yarn --}}
+pnpm install
 @endtask
 
 
@@ -84,5 +85,5 @@ php artisan queue:restart
 @task('generate_assets', ['on' => 'remote'])
 {{ logMessage("[6/6] 🌅  Generating assets…") }}
 cd {{ $release_dir }}/{{ $release }}
-yarn build
+pnpm run build
 @endtask
