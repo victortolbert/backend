@@ -5,16 +5,14 @@
     "build": "vite build",
     "serve": "vite preview"
   },
-  "devDependencies": {
+  "dependencies": {
     "axios": "^0.21.1",
     "lodash": "^4.17.21",
     "postcss": "^8.2.6",
-    "vite": "^2.0.2",
-    "laravel-vite": "^0.0.4",
+    "vite": "2.0.1",
+    "laravel-vite": "0.0.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "@vitejs/plugin-vue": "^1.1.4"
-  },
-  "dependencies": {
+    "@vitejs/plugin-vue": "^1.1.4",
     "vue": "^3.0.5"
   }
 }
