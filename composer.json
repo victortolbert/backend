@@ -14,7 +14,7 @@
     "guzzlehttp/guzzle": "^7.0.1",
     "laravel/framework": "^8.12",
     "laravel/tinker": "^2.5",
-    "innocenzi/laravel-vite": "dev-main#3ea5b9442e5"
+    "innocenzi/laravel-vite": "dev-main#0717af4d8"
   },
   "require-dev": {
     "facade/ignition": "^2.5",

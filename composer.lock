@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66ede1d42541142e365820fabb9fa156",
+    "content-hash": "abb2bfb138f2b574a5f8f0587be6453d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -949,12 +949,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocenzi/laravel-vite.git",
-                "reference": "3ea5b9442e5"
+                "reference": "0717af4d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocenzi/laravel-vite/zipball/3ea5b9442e5",
-                "reference": "3ea5b9442e5",
+                "url": "https://api.github.com/repos/innocenzi/laravel-vite/zipball/0717af4d8",
+                "reference": "0717af4d8",
                 "shasum": ""
             },
             "require": {
