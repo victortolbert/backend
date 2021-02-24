@@ -19,9 +19,9 @@ function logMessage($message) {
 fetch_repo
 run_composer
 run_yarn
-generate_assets
 update_permissions
 update_symlinks
+generate_assets
 @endmacro
 
 @task('fetch_repo')
@@ -45,21 +45,16 @@ yarn config set ignore-engines true
 yarn
 @endtask
 
-@task('generate_assets', ['on' => 'remote'])
-{{ logMessage("[4/6] 🌅  Generating assets…") }}
-cd {{ $release_dir }}/{{ $release }}
-yarn build
-@endtask
 
 @task('update_permissions')
-{{ logMessage("[5/6] 🔑  Updating permissions…") }}
+{{ logMessage("[4/6] 🔑  Updating permissions…") }}
 cd {{ $release_dir }}
 chgrp -R www-data {{ $release }}
 chmod -R ug+rxw {{ $release }}
 @endtask
 
 @task('update_symlinks')
-{{ logMessage("[6/6] 🔗  Updating symlinks…") }}
+{{ logMessage("[5/6] 🔗  Updating symlinks…") }}
 ln -nfs {{ $release_dir }}/{{ $release }} {{ $app_dir }}
 chgrp -h www-data {{ $app_dir }}
 
@@ -81,8 +76,13 @@ cd {{ $release_dir }}/{{ $release }}
 {{-- php artisan horizon:purge --}}
 {{-- php artisan horizon:terminate --}}
 php artisan queue:restart
+{{-- logMessage("php artisan up") --}}
+{{-- logMessage("✨ 🗃 ⚙️ ") --}}
+@endtask
 
-{{ logMessage("php artisan up") }}
-{{ logMessage("✨ 🗃 ⚙️ ") }}
 
+@task('generate_assets', ['on' => 'remote'])
+{{ logMessage("[6/6] 🌅  Generating assets…") }}
+cd {{ $release_dir }}/{{ $release }}
+yarn build
 @endtask
