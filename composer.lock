@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86ebb23efffdd40b9563f023277d0ea9",
+    "content-hash": "66ede1d42541142e365820fabb9fa156",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -945,21 +945,22 @@
         },
         {
             "name": "innocenzi/laravel-vite",
-            "version": "0.0.7",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/innocenzi/laravel-vite.git",
-                "reference": "d6a7145da4a0ec13bb276b1d80909ac9a401a769"
+                "reference": "3ea5b9442e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/innocenzi/laravel-vite/zipball/d6a7145da4a0ec13bb276b1d80909ac9a401a769",
-                "reference": "d6a7145da4a0ec13bb276b1d80909ac9a401a769",
+                "url": "https://api.github.com/repos/innocenzi/laravel-vite/zipball/3ea5b9442e5",
+                "reference": "3ea5b9442e5",
                 "shasum": ""
             },
             "require": {
+                "guzzlehttp/guzzle": "^7.2",
                 "illuminate/contracts": "^8.0",
-                "php": "^8.0",
+                "php": "^7.4|^8.0",
                 "spatie/laravel-package-tools": "^1.1"
             },
             "require-dev": {
@@ -970,6 +971,7 @@
                 "spatie/laravel-ray": "^1.9",
                 "vimeo/psalm": "^4.4"
             },
+            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1009,7 +1011,7 @@
             ],
             "support": {
                 "issues": "https://github.com/innocenzi/laravel-vite/issues",
-                "source": "https://github.com/innocenzi/laravel-vite/tree/0.0.7"
+                "source": "https://github.com/innocenzi/laravel-vite/tree/main"
             },
             "funding": [
                 {
@@ -1017,7 +1019,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-02-21T01:45:39+00:00"
+            "time": "2021-02-24T08:38:49+00:00"
         },
         {
             "name": "laravel/framework",
@@ -1509,16 +1511,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "20cab678faed06fac225193be281ea0fddb43b93"
+                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/20cab678faed06fac225193be281ea0fddb43b93",
-                "reference": "20cab678faed06fac225193be281ea0fddb43b93",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/d1339f64479af1bee0e82a0413813fe5345a54ea",
+                "reference": "d1339f64479af1bee0e82a0413813fe5345a54ea",
                 "shasum": ""
             },
             "require": {
@@ -1575,9 +1577,9 @@
             ],
             "support": {
                 "issues": "https://github.com/mockery/mockery/issues",
-                "source": "https://github.com/mockery/mockery/tree/master"
+                "source": "https://github.com/mockery/mockery/tree/1.4.3"
             },
-            "time": "2020-08-11T18:10:13+00:00"
+            "time": "2021-02-24T09:51:49+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -7491,7 +7493,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "innocenzi/laravel-vite": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

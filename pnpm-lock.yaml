@@ -5,7 +5,7 @@ dependencies:
   laravel-vite: 0.0.3
   lodash: 4.17.21
   postcss: 8.2.6
-  vite: 2.0.1
+  vite: 2.0.2
   vue: 3.0.5
 lockfileVersion: 5.2
 packages:
@@ -772,7 +772,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
-  /vite/2.0.1:
+  /vite/2.0.2:
     dependencies:
       esbuild: 0.8.51
       postcss: 8.2.6
@@ -785,7 +785,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     resolution:
-      integrity: sha512-x7ZfikjNs+6n4cdvwb9L5r5xBCdjmtmHFHaI4JVR3nAkJbMCK/dynfDWky8/NseZ9Ncz1jVxTQ/Bcf+n1ps1Ww==
+      integrity: sha512-X+PTIPRt6/5Odf/h0kBkwkck+YC0I6oKH5+ttA9ytoLyC9yeksktVq1KNzImqB+/1CNBiBE2vr7orcgSxAi67w==
   /vue/3.0.5:
     dependencies:
       '@vue/compiler-dom': 3.0.5
@@ -814,5 +814,5 @@ specifiers:
   laravel-vite: 0.0.3
   lodash: ^4.17.21
   postcss: ^8.2.6
-  vite: 2.0.1
+  vite: 2.0.2
   vue: ^3.0.5
